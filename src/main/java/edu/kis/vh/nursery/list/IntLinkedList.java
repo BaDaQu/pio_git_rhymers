@@ -5,13 +5,14 @@ public class IntLinkedList {
     private Node last;
     private final int ERROR_VALUE = -1;
 
-    public void push(int i) {
-        if (last == null)
-            last = new Node(i);
-        else {
-            last.next = new Node(i);
-            last.next.prev = last;
-            last = last.next;
+    public void push(int value) {
+        Node newNode = new Node(value);
+        if (last == null) {
+            last = newNode;
+        } else {
+            newNode.setPrev(last);
+            last.setNext(newNode);
+            last = newNode;
         }
     }
 
@@ -24,17 +25,21 @@ public class IntLinkedList {
     }
 
     public int top() {
-        if (isEmpty())
+        if (isEmpty()) {
             return ERROR_VALUE;
-        return last.value;
+        }
+        return last.getValue();
     }
 
     public int pop() {
-        if (isEmpty())
+        if (isEmpty()) {
             return ERROR_VALUE;
-        int ret = last.value;
-        last = last.prev;
+        }
+        int ret = last.getValue();
+        last = last.getPrev();
+        if (last != null) {
+            last.setNext(null);
+        }
         return ret;
     }
-
 }
