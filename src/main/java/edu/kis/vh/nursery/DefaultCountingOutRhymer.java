@@ -43,3 +43,7 @@ public class DefaultCountingOutRhymer {
         return total;
     }
 }
+
+// TODO: Metoda peekaboo jest protected. Być może warto zastanowić się
+//       nad jej dostępnością (czy na pewno powinna być dostępna tylko
+//       dla klas dziedziczących?)
