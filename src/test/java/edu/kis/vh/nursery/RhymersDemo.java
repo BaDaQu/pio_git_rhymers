@@ -33,4 +33,6 @@ class RhymersDemo {
                 + ((HanoiRhymer) rhymers[3]).reportRejected());
     }
 
+    //Dla zadania 15.
+    //Wszystko dziala poprawnie
 }
