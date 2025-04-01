@@ -69,3 +69,12 @@ public class IntLinkedList {
         }
     }
 }
+
+// TODO: Przeanalizować, czy IntLinkedList powinna dopuszczać przechowywanie
+//       wartości null. Jeśli nie, dodać odpowiednie sprawdzenie w metodzie
+//       'push'.
+// TODO: Dodać atrybut 'size' przechowujący rozmiar listy i metodę 'size()'
+//       zwracającą ten rozmiar. Pozwoli to uniknąć konieczności iterowania
+//       po liście, aby sprawdzić jej rozmiar.
+// TODO: Dodać możliwość iterowania po elementach listy (np. poprzez
+//       implementację interfejsu Iterable).

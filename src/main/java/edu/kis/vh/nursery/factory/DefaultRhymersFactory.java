@@ -27,3 +27,5 @@ public class DefaultRhymersFactory implements RhymersFactory {
     }
 
 }
+// TODO: Rozważyć stworzenie klasy 'FalseCountingOutRhymer' implementującej
+//       specyficzne zachowanie zamiast zwracania standardowej wyliczanki.
